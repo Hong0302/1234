@@ -1,0 +1,10 @@
+import time, Rpi.GPIO as GPIO
+GPIO.setup(4,GPIO.OUT)
+
+while True:
+        LEDon = GPIO.output(4,1)
+        print(Current LED is ON)
+        time.sleep(0.5)
+        LEDoff = GPIO.output(4.0)
+        print(Current LED is OFF)
+        time.sleep(0.5)
